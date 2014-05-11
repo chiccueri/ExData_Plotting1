@@ -8,7 +8,7 @@ Datetime<-as.POSIXlt(paste(xsub$Date, xsub$Time, sep=" "))
 xsub<-cbind(xsub,Datetime)
 
 #plotting
-par(bg="transparent", cex.main=0.77, cex.axis=0.77, cex.lab=0.77)
+par(cex.main=0.77, cex.axis=0.77, cex.lab=0.77)
 plot(xsub$Datetime, xsub$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 
 #creating the PNG file

@@ -8,7 +8,7 @@ Datetime<-as.POSIXlt(paste(xsub$Date, xsub$Time, sep=" "))
 xsub<-cbind(xsub,Datetime)
 
 #plotting
-par(bg="transparent", cex.main=0.75, cex.axis=0.75, cex.lab=0.75)
+par(cex.main=0.75, cex.axis=0.75, cex.lab=0.75)
 with(xsub, plot(Datetime, Sub_metering_1, col="black", type="l", xlab="", ylab="Energy sub metering"))
 with(xsub, lines(Datetime, Sub_metering_2, col="red", type="l"))
 with(xsub, lines(Datetime, Sub_metering_3, col="blue", type="l"))

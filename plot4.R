@@ -8,7 +8,7 @@ Datetime<-as.POSIXlt(paste(xsub$Date, xsub$Time, sep=" "))
 xsub<-cbind(xsub,Datetime)
 
 #plotting
-par(bg="transparent", mfrow=c(2,2), cex.main=0.75, cex.axis=0.75, cex.lab=0.75)
+par(mfrow=c(2,2), cex.main=0.75, cex.axis=0.75, cex.lab=0.75)
 #plot1
 with(xsub, plot(Datetime, Global_active_power, type="l", xlab="", ylab="Global Active Power"))
 #plot2

@@ -6,7 +6,7 @@ x$Date<-as.Date(x$Date,format="%d/%m/%Y")
 xsub<-x[x$Date=="2007-02-01"|x$Date=="2007-02-02",]
 
 #plotting
-par(bg="transparent", cex.main=0.75, cex.axis=0.75, cex.lab=0.75)
+par(cex.main=0.75, cex.axis=0.75, cex.lab=0.75)
 hist(xsub$Global_active_power,col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
 
 #creating the PNG file
